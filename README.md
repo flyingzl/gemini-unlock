@@ -131,6 +131,28 @@ RUST_LOG=debug gemini-unlock
 
 ---
 
+## ⚠️ Important Requirements
+
+Before using this tool, make sure to configure the following:
+
+### 1. Chrome Language Settings
+Set Google Chrome's language to **English**:
+1. Open Chrome settings
+2. Go to **Languages** section
+3. Set **Display Google Chrome in this language** to **English**
+4. Relaunch Chrome
+
+### 2. Proxy Configuration
+Configure your VPN/proxy tool to use **United States** region:
+- Set your proxy location to US servers
+- Ensure the proxy is active before using Gemini features
+- Some features may require a US IP address to function properly
+
+**Why these requirements?**
+While this tool modifies Chrome's configuration to indicate US region, Google's servers may perform additional checks. Using US language settings and a US proxy helps ensure maximum compatibility with Gemini features.
+
+---
+
 ## 🔧 How it Works
 
 This tool modifies Chrome's Local State configuration file to enable Gemini features by:
