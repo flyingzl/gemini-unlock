@@ -226,13 +226,20 @@ A backup is created as `Local State.bak` in the same directory.
 
 This tool is designed with safety in mind:
 
-✅ **Type-Safe JSON Parsing** - Uses `serde_json`, not regex
-✅ **Input Validation** - Verifies JSON before and after modification
-✅ **Automatic Backups** - Creates `.bak` file before changes
-✅ **Process Detection** - Refuses to run if Chrome is open
-✅ **Zero Network** - No external connections
-✅ **Open Source** - Fully auditable code
-✅ **Reversible** - Easy restore with `--restore` flag
+- ✅ **Type-Safe JSON Parsing**
+  - Uses `serde_json`, not regex
+- ✅ **Input Validation**
+  - Verifies JSON before and after modification
+- ✅ **Automatic Backups**
+  - Creates `.bak` file before changes
+- ✅ **Process Detection**
+  - Refuses to run if Chrome is open
+- ✅ **Zero Network**
+  - No external connections
+- ✅ **Open Source**
+  - Fully auditable code
+- ✅ **Reversible**
+  - Easy restore with `--restore` flag
 
 ---
 
