@@ -2,7 +2,7 @@
 name = "gemini-unlock"
 version = "0.2.0"
 edition = "2024"
-authors = ["flyingzl <your.email@example.com>"]
+authors = ["flyingzl"]
 description = "Unlock Chrome Gemini features by modifying Local State configuration"
 repository = "https://github.com/flyingzl/gemini-unlock"
 license = "MIT OR Apache-2.0"
