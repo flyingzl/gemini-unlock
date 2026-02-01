@@ -65,6 +65,7 @@ jobs:
           cross --version
 
       - name: Build release binary
+        shell: bash
         run: |
           if [[ "${{ matrix.use_cross }}" == "true" ]]; then
             cross build --verbose --release --target ${{ matrix.target }}
@@ -72,8 +73,8 @@ jobs:
             cargo build --verbose --release --target ${{ matrix.target }}
           fi
 
-      - name: Strip binary (Linux/macOS)
-        if: matrix.os != 'windows-latest'
+      - name: Strip binary (non-cross builds only)
+        if: matrix.os != 'windows-latest' && !matrix.use_cross
         run: |
           strip target/${{ matrix.target }}/release/gemini-unlock
 
