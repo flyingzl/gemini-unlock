@@ -4,7 +4,7 @@
 
 **Enable Chrome's built-in Gemini AI features outside the US**
 
-> ⚡ A one-click script to bypass Chrome Gemini's region restrictions and unlock AI features for non-US users
+> ⚡ A Rust CLI application to bypass Chrome Gemini's region restrictions and unlock AI features for non-US users
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/flyingzl/gemini-unlock/build.yml?branch=main)](https://github.com/flyingzl/gemini-unlock/actions)
 [![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](LICENSE)
