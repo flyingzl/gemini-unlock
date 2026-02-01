@@ -60,9 +60,10 @@ jobs:
       - name: Install cross-compilation tools
         if: matrix.use_cross
         run: |
-          cargo install cross --git https://github.com/cross-rs/cross
+          curl -LsSf https://github.com/cross-rs/cross/releases/latest/download/cross-x86_64-unknown-linux-gnu.tar.gz | tar xz
+          sudo mv cross /usr/local/bin/
+          cross --version
           echo "CARGO=cross" >> $GITHUB_ENV
-          echo "CARGO_TARGET_DIR=./target/${{ matrix.target }}" >> $GITHUB_ENV
 
       - name: Build release binary
         run: |
