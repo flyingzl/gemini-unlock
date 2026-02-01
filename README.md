@@ -240,7 +240,6 @@ This tool is designed with safety in mind:
 
 This project was inspired by and built upon ideas from:
 - **[Gemini-in-Chrome](https://github.com/appsail/Gemini-in-Chrome)** by appsail - Original concept and implementation
-- [chrome-gemini](https://github.com/...) - Community discussions and feedback
 
 Special thanks to the original author for the pioneering work on enabling Chrome Gemini features. This Rust implementation aims to provide a safer, cross-platform, and more maintainable solution with comprehensive testing and type-safe JSON handling.
 
