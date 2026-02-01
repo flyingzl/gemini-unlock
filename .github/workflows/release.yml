@@ -63,11 +63,14 @@ jobs:
           curl -LsSf https://github.com/cross-rs/cross/releases/latest/download/cross-x86_64-unknown-linux-gnu.tar.gz | tar xz
           sudo mv cross /usr/local/bin/
           cross --version
-          echo "CARGO=cross" >> $GITHUB_ENV
 
       - name: Build release binary
         run: |
-          ${{ env.CARGO }} cargo build --verbose --release --target ${{ matrix.target }}
+          if [[ "${{ matrix.use_cross }}" == "true" ]]; then
+            cross build --verbose --release --target ${{ matrix.target }}
+          else
+            cargo build --verbose --release --target ${{ matrix.target }}
+          fi
 
       - name: Strip binary (Linux/macOS)
         if: matrix.os != 'windows-latest'
