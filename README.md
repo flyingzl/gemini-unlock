@@ -1,3 +1,5 @@
+
+
 <div align="center">
 
 # 🔓 gemini-unlock
@@ -118,7 +120,7 @@ RUST_LOG=debug gemini-unlock
 | `--kill-chrome` | `-k` | Close running Chrome before applying patches |
 | `--restore` | `-r` | Restore Local State from backup instead of patching |
 | `--help` | `-h` | Print help information |
-| `--version` | `-V` | Print version information |
+| `--version` | — | Print version information |
 
 ### Environment Variables
 
